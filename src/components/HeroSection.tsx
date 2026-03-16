@@ -2,18 +2,23 @@ import { motion } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
 import CTAButton from "./CTAButton";
 import heroCapa from "@/assets/hero-capa.png";
+import heroCapaMobile from "@/assets/hero-capa-mobile.png";
 import heroLogo from "@/assets/hero-logo.png";
 
 const HeroSection = () =>
 <section className="hero-gradient py-24 md:py-[100px] relative overflow-hidden">
-    {/* Background image - CAPA */}
+    {/* Background image - Desktop */}
     <div
-    className="absolute inset-0 bg-cover bg-center bg-no-repeat pointer-events-none"
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat pointer-events-none hidden md:block"
     style={{ backgroundImage: `url(${heroCapa})` }} />
-  
+
+    {/* Background image - Mobile */}
+    <div
+    className="absolute inset-0 bg-cover bg-top bg-no-repeat pointer-events-none md:hidden"
+    style={{ backgroundImage: `url(${heroCapaMobile})` }} />
 
     {/* Dark overlay for text contrast */}
-    <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+    <div className="absolute inset-0 bg-black/50 md:bg-black/40 pointer-events-none" />
 
     <div className="container mx-auto px-4 md:px-8 relative z-10">
       <div className="max-w-3xl">
