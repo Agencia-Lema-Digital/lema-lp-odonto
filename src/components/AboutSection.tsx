@@ -75,7 +75,7 @@ const AboutSection = () => (
             </AnimatedSection>
           ))}
 
-          <AnimatedSection className="mt-4 pl-14">
+          <AnimatedSection className="mt-4 pl-0 text-center lg:pl-14 lg:text-left">
             <CTAButton className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold px-8 py-4 rounded-lg cta-glow hover:bg-secondary transition-colors">
               QUERO AGENDAR O DIAGNÓSTICO GRATUITO →
             </CTAButton>
