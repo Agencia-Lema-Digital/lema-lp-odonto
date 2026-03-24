@@ -4,7 +4,7 @@ import CTAButton from "./CTAButton";
 import { motion } from "framer-motion";
 import team1 from "@/assets/team-1.png";
 import team2 from "@/assets/team-2.png";
-import team3 from "@/assets/team-3.png";
+
 import team4 from "@/assets/team-4.png";
 
 const diffs = [
