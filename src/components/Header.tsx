@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 import lemaLogo from "@/assets/lema-logo.png";
-import { useFormDialog } from "./FormDialogContext";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
-  const { open } = useFormDialog();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -22,12 +20,12 @@ const Header = () => {
         <a href="#">
           <img src={lemaLogo} alt="Lema Agência Digital" className="h-10 md:h-12" />
         </a>
-        <button
-          onClick={open}
+        <a
+          href="https://form.respondi.app/5196P56V"
           className="hidden sm:inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold text-sm px-5 py-2.5 rounded-lg hover:bg-secondary transition-colors"
         >
           Agendar Sessão Gratuita
-        </button>
+        </a>
       </div>
     </header>
   );

@@ -1,14 +1,15 @@
-import { useFormDialog } from "./FormDialogContext";
-
 interface CTAButtonProps {
   children: React.ReactNode;
   className?: string;
 }
 
 const CTAButton = ({ children, className = "" }: CTAButtonProps) => {
-  const { open } = useFormDialog();
+  const handleClick = () => {
+    window.location.href = "https://form.respondi.app/5196P56V";
+  };
+
   return (
-    <button onClick={open} className={className}>
+    <button onClick={handleClick} className={className}>
       {children}
     </button>
   );
