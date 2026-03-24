@@ -14,7 +14,7 @@ const diffs = [
   { icon: Target, title: "Foco exclusivo em odontologia premium", text: "Entendemos a venda consultiva de tratamentos de alto valor." },
 ];
 
-const teamPhotos = [team1, team3, team2, team4];
+const teamPhotos = [team1, team2, team4];
 
 const AboutSection = () => (
   <section className="bg-[#0a0a0a] py-16 md:py-24">
