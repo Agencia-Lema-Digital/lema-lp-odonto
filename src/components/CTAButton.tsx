@@ -5,7 +5,10 @@ interface CTAButtonProps {
 
 const CTAButton = ({ children, className = "" }: CTAButtonProps) => {
   const handleClick = () => {
-    window.location.href = "https://form.respondi.app/5196P56V";
+    const baseUrl = "https://form.respondi.app/5196P56V";
+    const currentParams = window.location.search;
+    const separator = currentParams ? (baseUrl.includes('?') ? '&' : '?') + currentParams.slice(1) : '';
+    window.location.href = baseUrl + separator;
   };
 
   return (
