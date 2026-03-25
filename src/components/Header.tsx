@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 import lemaLogo from "@/assets/lema-logo.png";
 
+const getUrlWithParams = (baseUrl: string) => {
+  const currentParams = window.location.search;
+  if (!currentParams) return baseUrl;
+  const separator = baseUrl.includes('?') ? '&' : '?';
+  return baseUrl + separator + currentParams.slice(1);
+};
+
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -21,7 +28,7 @@ const Header = () => {
           <img src={lemaLogo} alt="Lema Agência Digital" className="h-10 md:h-12" />
         </a>
         <a
-          href="https://form.respondi.app/5196P56V"
+          href={getUrlWithParams("https://form.respondi.app/5196P56V")}
           className="hidden sm:inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold text-sm px-5 py-2.5 rounded-lg hover:bg-secondary transition-colors"
         >
           Agendar Sessão Gratuita
