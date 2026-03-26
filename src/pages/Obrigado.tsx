@@ -73,17 +73,6 @@ const Obrigado = () => {
         {/* Main content */}
         <main className="relative z-10 flex-1 flex items-center justify-center px-4 pb-8">
           <div className="max-w-2xl w-full text-center space-y-8">
-            {/* Check icon */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.6 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-              className="flex justify-center"
-            >
-              <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary flex items-center justify-center">
-                <CheckCircle className="w-10 h-10 md:w-12 md:h-12 text-primary-foreground" strokeWidth={2.5} />
-              </div>
-            </motion.div>
 
             {/* Headline */}
             <motion.h1
