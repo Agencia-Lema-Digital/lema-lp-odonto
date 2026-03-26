@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import { motion } from "framer-motion";
 import { CheckCircle, MessageCircle, CalendarDays, BarChart3 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
