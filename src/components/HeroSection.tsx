@@ -6,7 +6,7 @@ import heroCapaMobile from "@/assets/hero-capa-mobile.png";
 import heroLogo from "@/assets/hero-logo.png";
 
 const HeroSection = () =>
-<section className="hero-gradient py-12 md:py-[100px] relative overflow-hidden">
+<section className="hero-gradient min-h-[100svh] md:min-h-0 md:py-[100px] relative overflow-hidden flex flex-col md:block">
     {/* Background image - Desktop */}
     <div
     className="absolute inset-0 bg-cover bg-center bg-no-repeat pointer-events-none hidden md:block"
@@ -17,12 +17,16 @@ const HeroSection = () =>
     className="absolute inset-0 bg-cover bg-top bg-no-repeat pointer-events-none md:hidden"
     style={{ backgroundImage: `url(${heroCapaMobile})` }} />
 
-    {/* Dark overlay for text contrast */}
-    <div className="absolute inset-0 bg-black/50 md:bg-black/40 pointer-events-none" />
+    {/* Dark overlay - gradient from bottom for mobile, uniform for desktop */}
+    <div className="absolute inset-0 pointer-events-none hidden md:block bg-black/40" />
+    <div className="absolute inset-0 pointer-events-none md:hidden" style={{ background: 'linear-gradient(to bottom, transparent 15%, rgba(0,0,0,0.45) 40%, rgba(0,0,0,0.75) 70%)' }} />
 
-    <div className="container mx-auto px-4 md:px-8 relative z-10">
+    {/* Mobile: push content to bottom third */}
+    <div className="flex-1 md:hidden" />
+
+    <div className="container mx-auto px-4 md:px-8 relative z-10 pb-6 md:pb-0">
       <div className="max-w-3xl">
-        <AnimatedSection className="space-y-4 md:space-y-6 text-left">
+        <AnimatedSection className="space-y-3 md:space-y-6 text-left">
           <motion.img
             src={heroLogo}
             alt="Lema Digital"
@@ -49,7 +53,6 @@ const HeroSection = () =>
               DO FUNIL DE CAPTAÇÃO DA SUA CLÍNICA
             </motion.span>
           </h1>
-          <div className="mb-1 md:mb-0" />
 
           {/* Mobile subheadline - shorter */}
           <motion.p
@@ -80,7 +83,7 @@ const HeroSection = () =>
           </motion.p>
 
           <motion.div
-          className="space-y-2 pt-5 md:pt-2"
+          className="space-y-2 pt-4 md:pt-2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}>
