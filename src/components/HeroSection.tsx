@@ -80,7 +80,7 @@ const HeroSection = () =>
           </motion.p>
 
           <motion.div
-          className="space-y-2 pt-1 md:pt-2"
+          className="space-y-2 pt-5 md:pt-2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}>
