@@ -21,12 +21,12 @@ const HeroSection = () =>
     <div className="absolute inset-0 pointer-events-none hidden md:block bg-black/40" />
     <div className="absolute inset-0 pointer-events-none md:hidden" style={{ background: 'linear-gradient(to bottom, transparent 15%, rgba(0,0,0,0.45) 40%, rgba(0,0,0,0.75) 70%)' }} />
 
-    {/* Mobile: push content to bottom third */}
-    <div className="flex-1 md:hidden" />
+    {/* Mobile: push content to bottom, with slight offset up */}
+    <div className="flex-1 md:hidden" style={{ maxHeight: 'calc(100svh - 420px)' }} />
 
-    <div className="container mx-auto px-4 md:px-8 relative z-10 pb-6 md:pb-0">
+    <div className="container mx-auto px-4 md:px-8 relative z-10 pb-8 md:pb-0">
       <div className="max-w-3xl">
-        <AnimatedSection className="space-y-3 md:space-y-6 text-left">
+        <AnimatedSection className="space-y-2 md:space-y-6 text-left">
           <motion.img
             src={heroLogo}
             alt="Lema Digital"
@@ -83,7 +83,7 @@ const HeroSection = () =>
           </motion.p>
 
           <motion.div
-          className="space-y-2 pt-4 md:pt-2"
+          className="space-y-2 pt-2 md:pt-2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}>
