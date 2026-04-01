@@ -92,7 +92,7 @@ const HeroSection = () =>
               Toque no botão abaixo e garanta um dos poucos horários disponíveis com nosso time
             </p>
             <CTAButton className="w-full md:w-auto bg-[#6A48F4] text-primary-foreground font-bold uppercase text-base px-8 py-4 md:py-[18px] rounded-lg cta-glow hover:bg-secondary transition-colors">
-              AGENDAR MINHA SESSÃO ESTRATÉGICA GRATUITA
+              QUERO MEU DIAGNÓSTICO GRATUITO
             </CTAButton>
             {/* Mobile scarcity text */}
             <p className="md:hidden text-[12px] text-white/60 text-center pt-1">
