@@ -6,7 +6,7 @@ import heroCapaMobile from "@/assets/hero-capa-mobile.png";
 import heroLogo from "@/assets/hero-logo.png";
 
 const HeroSection = () =>
-<section className="hero-gradient py-6 md:py-[100px] relative overflow-hidden">
+<section className="hero-gradient py-12 md:py-[100px] relative overflow-hidden">
     {/* Background image - Desktop */}
     <div
     className="absolute inset-0 bg-cover bg-center bg-no-repeat pointer-events-none hidden md:block"
