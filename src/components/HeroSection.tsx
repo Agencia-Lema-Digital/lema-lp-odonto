@@ -49,6 +49,7 @@ const HeroSection = () =>
               DO FUNIL DE CAPTAÇÃO DA SUA CLÍNICA
             </motion.span>
           </h1>
+          <div className="mb-1 md:mb-0" />
 
           {/* Mobile subheadline - shorter */}
           <motion.p
