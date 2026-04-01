@@ -6,7 +6,7 @@ import heroCapaMobile from "@/assets/hero-capa-mobile.png";
 import heroLogo from "@/assets/hero-logo.png";
 
 const HeroSection = () =>
-<section className="hero-gradient py-6 md:py-[100px] relative overflow-hidden">
+<section className="hero-gradient py-12 md:py-[100px] relative overflow-hidden">
     {/* Background image - Desktop */}
     <div
     className="absolute inset-0 bg-cover bg-center bg-no-repeat pointer-events-none hidden md:block"
@@ -22,7 +22,7 @@ const HeroSection = () =>
 
     <div className="container mx-auto px-4 md:px-8 relative z-10">
       <div className="max-w-3xl">
-        <AnimatedSection className="space-y-3 md:space-y-6 text-left">
+        <AnimatedSection className="space-y-4 md:space-y-6 text-left">
           <motion.img
             src={heroLogo}
             alt="Lema Digital"
@@ -33,7 +33,7 @@ const HeroSection = () =>
           />
           <h1>
             <motion.span
-            className="block font-extrabold uppercase text-[1.5rem] leading-[1.1] md:text-5xl lg:text-5xl text-primary-foreground"
+            className="block font-extrabold uppercase text-[1.75rem] leading-[1.1] md:text-5xl lg:text-5xl text-primary-foreground"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}>
@@ -41,7 +41,7 @@ const HeroSection = () =>
               DIAGNÓSTICO COMPLETO
             </motion.span>
             <motion.span
-            className="block font-extrabold uppercase text-[1.5rem] leading-[1.1] mt-1 md:text-5xl lg:text-5xl text-[#896bff]"
+            className="block font-extrabold uppercase text-[1.75rem] leading-[1.1] mt-1 md:text-5xl lg:text-5xl text-[#896bff]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}>
@@ -49,6 +49,7 @@ const HeroSection = () =>
               DO FUNIL DE CAPTAÇÃO DA SUA CLÍNICA
             </motion.span>
           </h1>
+          <div className="mb-1 md:mb-0" />
 
           {/* Mobile subheadline - shorter */}
           <motion.p
@@ -79,7 +80,7 @@ const HeroSection = () =>
           </motion.p>
 
           <motion.div
-          className="space-y-2 pt-1 md:pt-2"
+          className="space-y-2 pt-5 md:pt-2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}>
