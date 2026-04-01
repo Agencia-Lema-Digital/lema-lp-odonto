@@ -31,7 +31,7 @@ const Header = () => {
           href={getUrlWithParams("https://form.respondi.app/5196P56V")}
           className="hidden sm:inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold text-sm px-5 py-2.5 rounded-lg hover:bg-secondary transition-colors"
         >
-          Agendar Sessão Gratuita
+          Quero Meu Diagnóstico Gratuito
         </a>
       </div>
     </header>
