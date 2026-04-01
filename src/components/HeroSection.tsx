@@ -22,7 +22,7 @@ const HeroSection = () =>
 
     <div className="container mx-auto px-4 md:px-8 relative z-10">
       <div className="max-w-3xl">
-        <AnimatedSection className="space-y-3 md:space-y-6 text-left">
+        <AnimatedSection className="space-y-4 md:space-y-6 text-left">
           <motion.img
             src={heroLogo}
             alt="Lema Digital"
