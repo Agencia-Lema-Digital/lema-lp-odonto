@@ -33,7 +33,7 @@ const HeroSection = () =>
           />
           <h1>
             <motion.span
-            className="block font-extrabold uppercase text-[1.5rem] leading-[1.1] md:text-5xl lg:text-5xl text-primary-foreground"
+            className="block font-extrabold uppercase text-[1.75rem] leading-[1.1] md:text-5xl lg:text-5xl text-primary-foreground"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}>
