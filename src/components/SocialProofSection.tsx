@@ -100,7 +100,7 @@ const SocialProofSection = () => (
                   <p className="text-xs text-secondary-foreground/70">{t.role}</p>
                 </div>
               </div>
-              <p className="text-sm text-secondary-foreground/90 italic flex-1">"{t.quote}"</p>
+              <p className="text-[15px] md:text-sm text-secondary-foreground/90 italic flex-1 leading-relaxed">"{t.quote}"</p>
               <span className="mt-4 inline-block self-start bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full">
                 {t.badge}
               </span>
@@ -119,8 +119,11 @@ const SocialProofSection = () => (
 
       <AnimatedSection className="text-center">
         <CTAButton className="inline-flex items-center gap-2 bg-background text-primary font-bold px-8 py-4 rounded-lg cta-glow hover:bg-accent transition-colors">
-          QUERO AGENDAR O DIAGNÓSTICO GRATUITO →
+          QUERO MEU DIAGNÓSTICO GRATUITO →
         </CTAButton>
+        <p className="text-[12px] text-secondary-foreground/50 mt-2">
+          Você será direcionado para agendar um horário de 30 minutos.
+        </p>
       </AnimatedSection>
     </div>
   </section>

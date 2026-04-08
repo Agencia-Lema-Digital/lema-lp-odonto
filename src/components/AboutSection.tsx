@@ -77,8 +77,11 @@ const AboutSection = () => (
 
           <AnimatedSection className="mt-4 pl-0 text-center lg:pl-14 lg:text-left">
             <CTAButton className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold px-8 py-4 rounded-lg cta-glow hover:bg-secondary transition-colors">
-              QUERO AGENDAR O DIAGNÓSTICO GRATUITO →
+              QUERO MEU DIAGNÓSTICO GRATUITO →
             </CTAButton>
+            <p className="text-[12px] text-white/50 mt-2">
+              Você será direcionado para agendar um horário de 30 minutos.
+            </p>
           </AnimatedSection>
         </div>
       </div>
