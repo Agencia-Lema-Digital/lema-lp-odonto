@@ -42,7 +42,7 @@ const HeroSection = () =>
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}>
             
-              DIAGNÓSTICO COMPLETO
+              DESCUBRA ONDE SUA CLÍNICA
             </motion.span>
             <motion.span
             className="block font-extrabold uppercase text-[1.75rem] leading-[1.1] mt-1 md:text-5xl lg:text-5xl text-[#896bff]"
@@ -50,7 +50,7 @@ const HeroSection = () =>
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}>
             
-              DO FUNIL DE CAPTAÇÃO DA SUA CLÍNICA
+              ESTÁ PERDENDO PACIENTES
             </motion.span>
           </h1>
 
@@ -60,7 +60,7 @@ const HeroSection = () =>
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}>
-            Descubra onde sua clínica está <strong className="font-bold text-[#896bff]">perdendo pacientes</strong> e receba um <strong className="font-bold text-[#896bff]">plano de ação personalizado</strong> em 30 minutos.
+            Receba um <strong className="font-bold text-[#896bff]">diagnóstico completo do funil de captação</strong> da sua clínica e um <strong className="font-bold text-[#896bff]">plano de ação personalizado</strong> em 30 minutos.
           </motion.p>
 
           {/* Desktop subheadline - original */}
@@ -69,15 +69,15 @@ const HeroSection = () =>
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}>
-            Em 30 minutos, nosso time vai identificar por que sua clínica está{" "}
-            <strong className="font-bold text-[#896bff]">perdendo pacientes</strong> e entregar
-            um plano personalizado para unir{" "}
+            Receba um{" "}
+            <strong className="font-bold text-[#896bff]">diagnóstico completo do funil de captação</strong>{" "}
+            da sua clínica e um plano personalizado para unir{" "}
             <strong className="font-bold text-[#896bff]">
               anúncios, conteúdo e processo comercial
             </strong>{" "}
             em um único funil que transforma cliques em{" "}
             <strong className="font-bold text-[#896bff]">
-              agenda cheia com previsibilidade  
+              agenda cheia com previsibilidade
             </strong>
             .
           </motion.p>
@@ -94,8 +94,11 @@ const HeroSection = () =>
             <CTAButton className="w-full md:w-auto bg-[#6A48F4] text-primary-foreground font-bold uppercase text-base px-8 py-4 md:py-[18px] rounded-lg cta-glow hover:bg-secondary transition-colors">
               QUERO MEU DIAGNÓSTICO GRATUITO
             </CTAButton>
+            <p className="text-[11px] md:text-[12px] text-white/60 text-center md:text-left pt-1">
+              Você será direcionado para agendar um horário de 30 minutos.
+            </p>
             {/* Mobile scarcity text */}
-            <p className="md:hidden text-[12px] text-white/60 text-center pt-1">
+            <p className="md:hidden text-[11px] text-white/50 text-center">
               Vagas limitadas por semana.
             </p>
           </motion.div>
