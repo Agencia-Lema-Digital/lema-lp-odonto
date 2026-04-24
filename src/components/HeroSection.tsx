@@ -60,7 +60,7 @@ const HeroSection = () =>
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}>
-            Em <strong className="font-bold text-[#896bff]">30 minutos</strong>, um especialista da Lema analisa o funil da sua clínica e mostra <strong className="font-bold text-[#896bff]">onde os leads estão fugindo</strong> antes de virar avaliação agendada.
+            Em <strong className="font-bold text-[#896bff]">30 minutos</strong>, um especialista da Lema Digital analisa o funil da sua clínica e mostra <strong className="font-bold text-[#896bff]">onde os leads estão fugindo</strong> antes de virar avaliação agendada.
           </motion.p>
 
           {/* Desktop subheadline - original */}
@@ -69,7 +69,7 @@ const HeroSection = () =>
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}>
-            Em <strong className="font-bold text-[#896bff]">30 minutos</strong>, um especialista da Lema analisa o{" "}
+            Em <strong className="font-bold text-[#896bff]">30 minutos</strong>, um especialista da Lema Digital analisa o{" "}
             <strong className="font-bold text-[#896bff]">funil da sua clínica</strong> e te mostra exatamente onde os{" "}
             <strong className="font-bold text-[#896bff]">leads de implante e estética</strong> estão fugindo antes de virar{" "}
             <strong className="font-bold text-[#896bff]">avaliação agendada</strong>.
