@@ -42,7 +42,7 @@ const HeroSection = () =>
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}>
             
-              DESCUBRA ONDE SUA CLÍNICA
+              VOCÊ INVESTE EM ANÚNCIO, O LEAD CHEGA,
             </motion.span>
             <motion.span
             className="block font-extrabold uppercase text-[1.75rem] leading-[1.1] mt-1 md:text-5xl lg:text-5xl text-[#896bff]"
@@ -50,7 +50,7 @@ const HeroSection = () =>
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}>
             
-              ESTÁ PERDENDO PACIENTES
+              MAS SOME NO WHATSAPP?
             </motion.span>
           </h1>
 
@@ -60,7 +60,7 @@ const HeroSection = () =>
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}>
-            Receba um <strong className="font-bold text-[#896bff]">diagnóstico completo do funil de captação</strong> da sua clínica e um <strong className="font-bold text-[#896bff]">plano de ação personalizado</strong> em 30 minutos.
+            Em <strong className="font-bold text-[#896bff]">30 minutos</strong>, um especialista da Lema analisa o funil da sua clínica e mostra <strong className="font-bold text-[#896bff]">onde os leads estão fugindo</strong> antes de virar avaliação agendada.
           </motion.p>
 
           {/* Desktop subheadline - original */}
@@ -69,17 +69,10 @@ const HeroSection = () =>
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}>
-            Receba um{" "}
-            <strong className="font-bold text-[#896bff]">diagnóstico completo do funil de captação</strong>{" "}
-            da sua clínica e um plano personalizado para unir{" "}
-            <strong className="font-bold text-[#896bff]">
-              anúncios, conteúdo e processo comercial
-            </strong>{" "}
-            em um único funil que transforma cliques em{" "}
-            <strong className="font-bold text-[#896bff]">
-              agenda cheia com previsibilidade
-            </strong>
-            .
+            Em <strong className="font-bold text-[#896bff]">30 minutos</strong>, um especialista da Lema analisa o{" "}
+            <strong className="font-bold text-[#896bff]">funil da sua clínica</strong> e te mostra exatamente onde os{" "}
+            <strong className="font-bold text-[#896bff]">leads de implante e estética</strong> estão fugindo antes de virar{" "}
+            <strong className="font-bold text-[#896bff]">avaliação agendada</strong>.
           </motion.p>
 
           <motion.div
